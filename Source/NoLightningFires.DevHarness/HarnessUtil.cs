@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.IO;
-using LudeonTK;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -131,17 +130,6 @@ public static class HarnessUtil
     public static void FocusCamera(IntVec3 cell, float size)
     {
         Find.CameraDriver.SetRootPosAndSize(cell.ToVector3Shifted(), size);
-    }
-
-    public static void Screenshot(string name)
-    {
-        Directory.CreateDirectory(HarnessDir);
-        EditWindow_Log log = Find.WindowStack.WindowOfType<EditWindow_Log>();
-        if (log != null)
-        {
-            Find.WindowStack.TryRemove(log, doCloseSound: false);
-        }
-        ScreenCapture.CaptureScreenshot(Path.Combine(HarnessDir, name + ".png"));
     }
 
     public static void CloseBlockingWindows()

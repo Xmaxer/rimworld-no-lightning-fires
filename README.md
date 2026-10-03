@@ -45,7 +45,6 @@ Each scenario builds a grass field with wood log stacks and wooden walls, which 
 | strike | 9 direct strikes on the field, one on a naked colonist: no fire, the colonist gets a burn, a wooden wall loses hit points |
 | flashstorm | A real flashstorm over the field: 6 strikes, all inside the field, no fire |
 | storm | A dry thunderstorm over the whole unfogged map: 3 natural strikes, no fire anywhere on the map |
-| ui | Gallery screenshots at normal speed: a bolt hitting the field, then the field afterwards |
 | control | The same Flame explosion set off directly, not through `DoStrike`, does start fires. This proves the field is a valid test |
 
 ## Releasing
@@ -54,8 +53,7 @@ Each scenario builds a grass field with wood log stacks and wooden walls, which 
 2. `make package` builds `dist/NoLightningFires`, which `make deploy` links into `RimWorld/Mods/NoLightningFires`.
 3. With dev mode on, open Mods in RimWorld, select No Lightning Fires, not the Dev Harness, and click Upload.
    Steam writes `About/PublishedFileId.txt` into `dist/`, and `package.ps1` keeps it across repackages.
-4. On the Workshop page, paste `workshop/description.bbcode.txt` and add `workshop/gallery/*.png` as screenshots.
+4. On the Workshop page, paste `workshop/description.bbcode.txt`.
 
 `tools/asset-pipeline/generate_asset.py` made `About/Preview.png` and `About/ModIcon.png` with Gemini. It reads
-`GEMINI_API_KEY` from the environment. `title_preview.py` adds the title to the preview. `crop_gallery.py` cuts the
-gallery shots from the harness screenshots, so run `make smoke SCENARIOS=ui` first.
+`GEMINI_API_KEY` from the environment. `title_preview.py` adds the title to the preview.

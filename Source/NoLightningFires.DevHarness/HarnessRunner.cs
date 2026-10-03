@@ -19,7 +19,6 @@ public sealed class HarnessRunner : GameComponent
             ["strike"] = () => new Scenarios.StrikeScenario(),
             ["flashstorm"] = () => new Scenarios.FlashstormScenario(),
             ["storm"] = () => new Scenarios.StormScenario(),
-            ["ui"] = () => new Scenarios.UiScenario(),
             ["control"] = () => new Scenarios.ControlScenario(),
             ["playground"] = () => new Scenarios.PlaygroundScenario(),
         };
@@ -27,7 +26,7 @@ public sealed class HarnessRunner : GameComponent
     /// <summary>
     /// What "all" expands to: every automated test (not the playground). "control" sets real fires, so it runs last.
     /// </summary>
-    private static readonly string[] All = { "boot", "strike", "flashstorm", "storm", "ui", "control" };
+    private static readonly string[] All = { "boot", "strike", "flashstorm", "storm", "control" };
 
     private readonly List<HarnessScenario> queue = new List<HarnessScenario>();
     private readonly List<string> failures = new List<string>();

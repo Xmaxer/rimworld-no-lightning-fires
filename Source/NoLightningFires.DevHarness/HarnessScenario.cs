@@ -16,7 +16,7 @@ public abstract class HarnessScenario
 
     public virtual int TimeoutTicks => 5000;
 
-    /// <summary>Game speed while this scenario runs. Screenshot scenarios use Normal so a bolt stays on screen.</summary>
+    /// <summary>Game speed while this scenario runs.</summary>
     public virtual TimeSpeed Speed => TimeSpeed.Ultrafast;
 
     /// <summary>

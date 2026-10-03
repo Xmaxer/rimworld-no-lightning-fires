@@ -1,0 +1,33 @@
+[img]https://raw.githubusercontent.com/Xmaxer/rimworld-no-lightning-fires/main/About/Preview.png[/img]
+
+[h1]No Lightning Fires[/h1]
+
+Lightning no longer starts fires.
+
+A dry thunderstorm or a flashstorm can burn down half the map in vanilla. With this mod, a strike still lands with the same bolt, flash, smoke and thunder, and still burns any pawn or building right next to it. The grass around it stays unburnt.
+
+[hr][/hr]
+
+[h2]What changes[/h2]
+
+[list]
+[*]No fire from lightning strikes in thunderstorms, dry thunderstorms and flashstorms.
+[*]Strikes still deal the same burn damage in the same radius as vanilla.
+[*]Fire from everything else, such as incendiary weapons, molotovs and explosions, works as in vanilla.
+[/list]
+
+There are no settings.
+
+[hr][/hr]
+
+[h2]Compatibility[/h2]
+
+[list]
+[*]Safe to add to or remove from an existing save.
+[*]Works with any mod that calls the vanilla lightning strike. A mod that makes its own lightning with its own fire code is not covered.
+[*]Requires [url=https://steamcommunity.com/workshop/filedetails/?id=2009463077]Harmony[/url].
+[/list]
+
+[hr][/hr]
+
+Source and issues: [url=https://github.com/Xmaxer/rimworld-no-lightning-fires]GitHub[/url]

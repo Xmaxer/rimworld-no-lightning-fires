@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="NoLightningFires.DevHarness/NoLightningFires.DevHarness.csproj" />
+  <Project Path="NoLightningFires/NoLightningFires.csproj" />
+</Solution>

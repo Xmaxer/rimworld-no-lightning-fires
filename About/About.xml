@@ -3,10 +3,11 @@
   <packageId>Xmaxer.NoLightningFires</packageId>
   <name>No Lightning Fires</name>
   <author>Xmaxer</author>
-  <modVersion>1.0.0</modVersion>
+  <modVersion>1.0.1</modVersion>
   <url>https://github.com/Xmaxer/rimworld-no-lightning-fires</url>
   <supportedVersions>
     <li>1.6</li>
+    <li>1.7</li>
   </supportedVersions>
   <modDependencies>
     <li>
